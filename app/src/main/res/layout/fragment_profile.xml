@@ -1,0 +1,309 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgBlue"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/custDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_proof_top"
+                android:layout_marginLeft="@dimen/layout_proof_top"
+                android:layout_marginRight="@dimen/layout_proof_top"
+                android:layout_marginTop="@dimen/margin_edit_text"
+                android:background="@drawable/cardbg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_edit_text"
+                    android:layout_marginRight="@dimen/margin_edit_text"
+                    android:layout_marginTop="@dimen/layout_proof_top"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCustomerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Curtis Beck"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="@dimen/sp_18"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/signin_margin_left"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/gender"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_dlg_top_margin"
+                            android:layout_marginTop="@dimen/prof_frag_top"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="gender"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorGrey"
+                                android:textSize="@dimen/sp_16"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvGender"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Male"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorLtGrey"
+                                android:textSize="@dimen/sp_16" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_proof_top"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/birthday_cake"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_dlg_top_margin"
+                            android:layout_marginTop="@dimen/prof_frag_top"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="age"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorGrey"
+                                android:textSize="@dimen/sp_16"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvAge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="28"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorLtGrey"
+                                android:textSize="@dimen/sp_16" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_proof_top"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/bookingid"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_proof_top"
+                            android:layout_marginTop="@dimen/prof_frag_top"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="booking id"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorGrey"
+                                android:textSize="@dimen/sp_16"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvOrderId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="36722"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorLtGrey"
+                                android:textSize="@dimen/sp_16" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_proof_top"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/calendar"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_proof_top"
+                            android:layout_marginTop="@dimen/prof_frag_top"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pickup_dt_time"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorGrey"
+                                android:textSize="@dimen/sp_16"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvPickupDtTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="28 June 2017 - 11:30 am"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorLtGrey"
+                                android:textSize="@dimen/sp_16" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_proof_top"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/location"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_dlg_top_margin"
+                            android:layout_marginTop="@dimen/prof_frag_top"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="pickup address"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorGrey"
+                                android:textSize="@dimen/sp_16"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvPickAddr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pickup_addr"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorLtGrey"
+                                android:textSize="@dimen/sp_16" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/layout_proof_top"
+                        android:layout_marginTop="@dimen/layout_proof_top"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/bluephone"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_dlg_top_margin"
+                            android:layout_marginTop="@dimen/prof_frag_top"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="phone number"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorGrey"
+                                android:textSize="@dimen/sp_16"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvPhone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9887450025"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorLtGrey"
+                                android:textSize="@dimen/sp_16" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/callBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/layout_proof_top"
+                android:layout_marginRight="@dimen/layout_proof_top"
+                android:src="@mipmap/callround"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

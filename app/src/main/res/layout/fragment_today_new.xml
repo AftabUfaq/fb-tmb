@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgBlue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dateRL"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/profile_logout_top"
+        android:layout_marginRight="@dimen/profile_logout_top"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/todayTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="June 27"
+            android:textAllCaps="true"
+            android:textColor="@color/colorLtGrey"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/pickupsLeftTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textAllCaps="true"
+            android:textColor="@color/colorLtGrey"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swifeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateRL"
+        android:layout_marginLeft="@dimen/profile_logout_left"
+        android:layout_marginRight="@dimen/profile_logout_left" >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/todayRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="vertical" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No Orders found"
+        android:textColor="@color/colorGrey"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

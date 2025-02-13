@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorBgBlue">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_proof_top"
+            android:padding="5dp"
+            android:src="@mipmap/back"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="notification"
+            android:textAllCaps="true"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvClearAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Mark all as Read"
+            android:padding="@dimen/layout_dlg_bottom_margin"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/layout_dlg_bottom_margin"
+            android:layout_marginRight="@dimen/order_view_margin"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBtBlue"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swifeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_dlg_bottom_margin"
+        android:layout_marginLeft="@dimen/mdtp_material_button_textpadding_horizontal"
+        android:layout_marginRight="@dimen/mdtp_material_button_textpadding_horizontal"
+        android:layout_marginTop="@dimen/layout_dlg_bottom_margin" >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notificationRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="vertical" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/notificationRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/layout_dlg_bottom_margin"
+        android:layout_marginLeft="@dimen/mdtp_material_button_textpadding_horizontal"
+        android:layout_marginRight="@dimen/mdtp_material_button_textpadding_horizontal"
+        android:layout_marginTop="@dimen/layout_dlg_bottom_margin"
+        android:scrollbars="vertical" />-->
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Notification found"
+        android:textColor="@color/colorGrey"
+        android:textSize="16sp"
+        android:visibility="gone" />
+</LinearLayout>

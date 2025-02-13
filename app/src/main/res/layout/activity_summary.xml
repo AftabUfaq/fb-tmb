@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgBlue"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_proof_top"
+            android:padding="5dp"
+            android:src="@mipmap/back"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvBookingID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textAllCaps="true"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorGrey"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        app:tabMaxWidth="0dp"
+        app:tabSelectedTextColor="@color/colorGrey"
+        android:minHeight="?attr/actionBarSize"
+        app:tabTextColor="@color/colorGrey"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/summary_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" />
+
+</LinearLayout>

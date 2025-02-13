@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_bottom_bg_height"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appBar"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/tmblogo"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:id="@+id/emailLin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ivLogo"
+                android:layout_marginTop="@dimen/layout_add_cards_top"
+                android:layout_marginLeft="@dimen/signin_margin_left"
+                android:layout_marginRight="@dimen/signin_margin_left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_edit_text"
+                    android:text="Login"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/signin_margin_top"
+                    android:background="@color/colorWhite"
+                    android:hint="Enter email ID"
+                    android:inputType="text|textNoSuggestions"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColorHint="@color/colorBlack"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:id="@+id/emailView"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorBtBlue" />
+
+                <Button
+                    android:id="@+id/nextBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="@dimen/signin_margin_login"
+                    android:background="@drawable/btn_bg"
+                    android:text="@string/next"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

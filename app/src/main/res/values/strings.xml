@@ -1,0 +1,62 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!--General-->
+    <string name="app_name">TestMyBloodFT</string>
+    <string name="google_map_api_key">AIzaSyDVNcjpeWPe2f0pYmbvlw2zel0yORgog38</string>
+    <string name="pickup_addr">75, Nerkundram Pathai, Vadapalani, \nChennai, Tamil Nadu, 600026</string>
+    <string name="pickup_dt_time">pick up date &amp; time</string>
+
+    <!-- Label for button to confirm chosen date or time [CHAR LIMIT=30] -->
+    <string name="mdtp_ok">@android:string/ok</string>
+    <string name="mdtp_cancel">@android:string/cancel</string>
+
+    <!--
+         Content description for the hour selector in the time picker, which displays
+         selectable hours of the day along the inside edge of a circle, as in an analog clock.
+         [CHAR LIMIT=50]
+    -->
+    <!--
+         Content description for the minute selector in the time picker, which displays
+         selectable five-minute intervals along the inside edge of a circle, as in an analog clock.
+         [CHAR LIMIT=50]
+    -->
+    <!-- Accessibility announcement for hour circular picker [CHAR LIMIT=NONE] -->
+    <!-- Accessibility announcement for minute circular picker [CHAR LIMIT=NONE] -->
+
+    <!--
+        Content description for the month and day selector in the date picker, which displays
+        a selectable grid of days laid out by month.
+        [CHAR LIMIT=50]
+     -->
+    <string name="mdtp_day_picker_description">Month grid of days</string>
+    <!--
+        Content description for the year selector in the date picker, which displays
+        a scrolling, vertical list of years.
+        [CHAR LIMIT=50]
+     -->
+    <string name="mdtp_year_picker_description">Year list</string>
+    <!-- Accessibility announcement for the day picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_day">Select month and day</string>
+    <!-- Accessibility announcement for the year picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_year">Select year</string>
+    <!-- Accessibility description for the item that is currently selected. -->
+    <string name="mdtp_item_is_selected"><xliff:g example="2013" test="item">%1$s</xliff:g> selected</string>
+    <!-- Accessibility announcement when a number that had been typed in is deleted [CHAR_LIMIT=NONE] -->
+
+    <!-- DO NOT TRANSLATE -->
+    <!-- DO NOT TRANSLATE -->
+
+    <!-- DO NOT TRANSLATE -->
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_sans_serif" translatable="false">sans-serif</string>
+
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_day_of_week_label_typeface" translatable="false">sans-serif</string>
+    <string name="booking_id">#1234</string>
+
+    <string name="paymnt_mode">PAYMENT MODE</string>
+    <string name="next">NEXT</string>
+    <string name="login">Login</string>
+    <string name="request_otp">REQUEST OTP</string>
+    <string name="resend_otp">RESEND OTP</string>
+</resources>

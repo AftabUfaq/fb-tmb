@@ -1,0 +1,236 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorBgBlue">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_proof_top"
+            android:padding="5dp"
+            android:src="@mipmap/back"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvBookingID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textAllCaps="true"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/schedule_item_margin"
+            android:background="@color/colorBgBlue"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ft_payment_height"
+                android:layout_marginLeft="@dimen/layout_proof_top"
+                android:layout_marginRight="@dimen/layout_proof_top"
+                android:background="@mipmap/barcode_bg"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtBarcode"
+                    android:layout_width="@dimen/barcode_bg_width"
+                    android:layout_height="@dimen/ft_payment_height"
+                    android:background="@android:color/transparent"
+                    android:digits="1234567890"
+                    android:hint="Scan Barcode"
+                    android:inputType="phone"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/schedule_margin_top"
+                    android:paddingRight="@dimen/schedule_margin_top"
+                    android:textColorHint="@color/colorLtGrey"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/sp_16" />
+
+                <ImageView
+                    android:id="@+id/ivRefresh"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/ft_payment_height"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="-8dp"
+                    android:src="@mipmap/refresh" />
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/launchScannerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ft_payment_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/profile_logout_top"
+                android:layout_marginTop="@dimen/profile_logout_top"
+                android:background="@drawable/btn_bg"
+                android:paddingLeft="@dimen/mdtp_selected_date_year_size"
+                android:paddingRight="@dimen/mdtp_selected_date_year_size"
+                android:text="launch scanner"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/layout_proof_top"
+                    android:layout_marginTop="@dimen/schedule_item_margin"
+                    android:text="User ID Proof"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorLtGrey"
+                    android:textSize="@dimen/sp_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/calander_title_height"
+                    android:layout_marginLeft="@dimen/layout_proof_top"
+                    android:layout_marginRight="@dimen/layout_proof_top"
+                    android:layout_marginTop="@dimen/signin_margin_top"
+                    android:background="@drawable/payment_border_shadow"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvYes"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/summary_billing_lab_details"
+                        android:layout_marginLeft="@dimen/payment_bg_spacing"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="Yes"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorLtGrey"
+                        android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                        android:id="@+id/tvNo"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/summary_billing_lab_details"
+                        android:layout_marginRight="@dimen/payment_bg_spacing"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_bg"
+                        android:gravity="center"
+                        android:text="No"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_edit_text"
+                    android:text="Number of vacutainers"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorLtGrey"
+                    android:textSize="@dimen/sp_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ft_payment_height"
+                    android:layout_marginLeft="@dimen/layout_proof_top"
+                    android:layout_marginRight="@dimen/layout_proof_top"
+                    android:layout_marginTop="@dimen/margin_edit_text"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvMinus"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/ft_payment_height"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/btn_bg"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/sp_18" />
+
+                    <EditText
+                        android:id="@+id/edtVacutainers"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/scan_qnt_bg_height"
+                        android:layout_marginLeft="@dimen/margin_profile_btn_spacing"
+                        android:layout_marginRight="@dimen/margin_profile_btn_spacing"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/qnt_border_shadow"
+                        android:digits="1234567890"
+                        android:gravity="center"
+                        android:hint="Vacutainers"
+                        android:inputType="phone"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:text="1"
+                        android:textColorHint="@color/colorBlack"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                        android:id="@+id/tvPlus"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/ft_payment_height"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/btn_bg"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/confirmBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ft_payment_height"
+                    android:layout_marginBottom="@dimen/layout_proof_top"
+                    android:layout_marginLeft="@dimen/layout_proof_top"
+                    android:layout_marginRight="@dimen/layout_proof_top"
+                    android:layout_marginTop="@dimen/layout_add_cards_top"
+                    android:background="@drawable/btn_bg"
+                    android:text="confirm"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

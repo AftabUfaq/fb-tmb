@@ -1,0 +1,356 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:id="@+id/scheduleLin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_proof_top"
+        android:layout_marginRight="@dimen/layout_proof_top"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/direction_appbar_height">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@mipmap/back"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/orderID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="#36772"
+                android:textAllCaps="true"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/detailBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@mipmap/invoice"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvPatientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appBar"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:text="Roy Schwartz"
+            android:textAllCaps="false"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/sp_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/profile_logout_left">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/pickupdate"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="pickup date"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/pickupDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="23 June 2017"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="@dimen/sp_12" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="@dimen/order_view_height"
+                android:background="@color/colorLtGrey" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/pickuptime"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="pickup time"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/pickupTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="11 am"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="@dimen/sp_12" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/scheduleLin"
+        android:background="@color/colorBgBlue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_proof_top"
+            android:layout_marginRight="@dimen/layout_proof_top"
+            android:layout_marginTop="@dimen/layout_proof_top"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/myRouteBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/schedule_bg">
+
+                <ImageView
+                    android:id="@+id/ivOrderStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/schedule_item_margin"
+                    android:src="@mipmap/showmyroute"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/profile_logout_left"
+                    android:layout_toRightOf="@+id/ivOrderStatus"
+                    android:text="show my route"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:id="@+id/myRouteArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@mipmap/rightarrow"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/reachDestination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:background="@drawable/order_inactive_bg">
+
+                <ImageView
+                    android:id="@+id/ivReachDest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/schedule_item_margin"
+                    android:src="@mipmap/reachdestination"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/profile_logout_left"
+                    android:layout_toRightOf="@+id/ivReachDest"
+                    android:text="reach destination"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:id="@+id/reachDestArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@mipmap/rightarrow"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/scanVacutainers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:background="@drawable/order_inactive_bg">
+
+                <ImageView
+                    android:id="@+id/ivVacutainers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/schedule_item_margin"
+                    android:src="@mipmap/reachdestination"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/profile_logout_left"
+                    android:layout_toRightOf="@+id/ivVacutainers"
+                    android:text="scan vacutainers"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:id="@+id/scanArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@mipmap/rightarrow"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/collectPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:background="@drawable/order_inactive_bg">
+
+                <ImageView
+                    android:id="@+id/ivPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/schedule_item_margin"
+                    android:src="@mipmap/reachdestination"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/profile_logout_left"
+                    android:layout_toRightOf="@+id/ivPayment"
+                    android:text="collect payment"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:id="@+id/closePickupArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@mipmap/rightarrow"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/callBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/layout_proof_top"
+            android:layout_marginRight="@dimen/layout_proof_top"
+            android:src="@mipmap/callround"
+            tools:ignore="ContentDescription" />
+
+
+    </FrameLayout>
+
+</RelativeLayout>

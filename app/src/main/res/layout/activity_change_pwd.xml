@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_bottom_bg_height"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/tmb_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/tmblogo"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:id="@+id/changePassLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mdtp_date_picker_header_height"
+                android:layout_marginLeft="@dimen/signin_margin_left"
+                android:layout_marginRight="@dimen/signin_margin_left"
+                android:layout_marginTop="@dimen/signin_margin_bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_edit_text"
+                    android:text="change password"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtOldPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/signin_margin_top"
+                    android:background="@color/colorWhite"
+                    android:hint="Old Password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:textColor="@color/colorGrey"
+                    android:textColorHint="@color/colorGrey"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:id="@+id/oldPassView"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorBtBlue" />
+
+                <EditText
+                    android:id="@+id/edtNewPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/signin_margin_top"
+                    android:background="@color/colorWhite"
+                    android:hint="New Password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:textColor="@color/colorGrey"
+                    android:textColorHint="@color/colorGrey"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:id="@+id/newPassView"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorGrey" />
+
+                <EditText
+                    android:id="@+id/edtConfirmPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/signin_margin_top"
+                    android:background="@color/colorWhite"
+                    android:hint="Confirm Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:textColor="@color/colorGrey"
+                    android:textColorHint="@color/colorGrey"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:id="@+id/confPassView"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorGrey" />
+
+                <Button
+                    android:id="@+id/updateBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="@dimen/signin_margin_login"
+                    android:background="@drawable/btn_bg"
+                    android:text="update"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/cancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/layout_dlg_top_margin"
+                android:text="cancel"
+                android:textAllCaps="true"
+                android:textColor="@color/colorLtGrey"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

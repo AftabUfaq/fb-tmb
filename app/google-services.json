@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "630217149223",
+    "firebase_url": "https://tmb-v1.firebaseio.com",
+    "project_id": "tmb-v1",
+    "storage_bucket": "tmb-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630217149223:android:271d7d338fb0c12e667702",
+        "android_client_info": {
+          "package_name": "com.orion.testmyblood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630217149223-3pkm60gsl0umin9r7015erk39tom8ioi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzQUN1lzWVvDhz3aCm4uZIypX54nHqUFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630217149223-3pkm60gsl0umin9r7015erk39tom8ioi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630217149223:android:2c04d009ec4e93df667702",
+        "android_client_info": {
+          "package_name": "com.orion.testmybloodft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630217149223-3pkm60gsl0umin9r7015erk39tom8ioi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzQUN1lzWVvDhz3aCm4uZIypX54nHqUFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630217149223-3pkm60gsl0umin9r7015erk39tom8ioi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

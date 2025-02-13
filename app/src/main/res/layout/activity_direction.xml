@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activity.DirectionActivity">
+
+    <RelativeLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/direction_appbar_height"
+        android:background="@color/colorBgBlue">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_proof_top"
+            android:padding="5dp"
+            android:src="@mipmap/back"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/orderIdTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="#36772"
+            android:textAllCaps="true"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar" />
+
+    <RelativeLayout
+        android:id="@+id/btn_request_direction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/profile_margin_right"
+        android:layout_marginLeft="@dimen/schedule_item_margin"
+        android:layout_marginRight="@dimen/schedule_item_margin"
+        android:background="@drawable/schedule_bg">
+
+        <ImageView
+            android:id="@+id/ivMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/schedule_item_margin"
+            android:padding="5dp"
+            android:src="@mipmap/locationlarge"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/profile_margin_left"
+            android:layout_marginRight="@dimen/profile_margin_left"
+            android:layout_toLeftOf="@+id/ivCall"
+            android:layout_toRightOf="@+id/ivMap"
+            android:text="@string/pickup_addr"
+            android:textAllCaps="false"
+            android:textColor="@color/colorLtGrey"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold"
+            tools:ignore="UnknownId" />
+
+        <ImageView
+            android:id="@+id/ivCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/schedule_item_margin"
+            android:padding="5dp"
+            android:src="@mipmap/callround"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="proofile_btn_bg">#5E5E5E</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey">#333333</color>
+    <color name="colorLtGrey">#666666</color>
+    <color name="colorBillingVoucher">#F4F2EA</color>
+    <color name="colorBtBlue">#28AEF5</color>
+    <color name="colorBgBlue">#C5D9E7</color>
+    <color name="colorTomorrowBg">#F0F0F0</color>
+    <color name="colorOrderInactive">#E7EFF5</color>
+    <color name="colorPaymentShadow">#919FAA</color>
+    <color name="colorPaymentBg">#B0C2CF</color>
+
+    <!-- Multiselect Picker -->
+    <color name="mdtp_white">#ffffff</color>
+
+    <color name="mdtp_accent_color">#8C8C8C</color>
+    <color name="mdtp_accent_color_focused">#76ffffff</color>
+    <color name="mdtp_date_picker_text_normal">#ff212121</color>
+    <color name="mdtp_date_picker_text_highlighted">@color/mdtp_date_picker_text_normal</color>
+    <color name="mdtp_date_picker_text_disabled">#ccc</color>
+    <color name="mdtp_date_picker_month_day">#767676</color>
+
+    <!-- DatePicker Dark Theme -->
+    <color name="mdtp_date_picker_view_animator_dark_theme">@color/mdtp_light_gray</color>
+    <color name="mdtp_date_picker_text_normal_dark_theme">@color/mdtp_white</color>
+    <color name="mdtp_date_picker_month_day_dark_theme">#b4b4b4</color>
+    <color name="mdtp_date_picker_text_disabled_dark_theme">#767676</color>
+    <color name="mdtp_date_picker_text_highlighted_dark_theme">
+        @color/mdtp_date_picker_text_normal_dark_theme
+    </color>
+
+    <color name="mdtp_date_picker_view_animator">@android:color/white</color>
+
+    <color name="mdtp_button_color">@color/mdtp_accent_color</color>
+
+    <!-- TimePicker Dark Theme -->
+
+    <!-- Colors for red theme -->
+    <color name="mdtp_light_gray">#424242</color>
+</resources>
