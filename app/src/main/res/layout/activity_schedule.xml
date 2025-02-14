@@ -119,7 +119,7 @@
         android:background="@android:color/transparent" />
 
 
-    <com.mikhaellopez.circularimageview.CircularImageView
+    <!-- <com.mikhaellopez.circularimageview.CircularImageView
         android:id="@+id/launchScannerBtn"
         android:layout_width="60dp"
         android:layout_gravity="end"
@@ -127,6 +127,6 @@
         android:background="@drawable/barcode_scanner"
         android:layout_height="60dp">
 
-    </com.mikhaellopez.circularimageview.CircularImageView>
+    </com.mikhaellopez.circularimageview.CircularImageView> -->
 
 </LinearLayout>

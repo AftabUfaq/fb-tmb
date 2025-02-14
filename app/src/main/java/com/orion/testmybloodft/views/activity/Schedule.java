@@ -217,12 +217,12 @@ public class Schedule extends AppCompatActivity implements ApiResponseView, Hand
         mContext = this;
 
 
-        binding.launchScannerBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Schedule.this,QrCodeActivity.class));
-            }
-        });
+//        binding.launchScannerBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(Schedule.this,QrCodeActivity.class));
+//            }
+//        });
         handleClick();
         double d  = 23.132679999999997;
         DecimalFormat dFormat = new DecimalFormat("#.######");
